@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Section styling */
+  section {
+    margin: 20px 0;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.8em;
+  }
+  
+ /* Favorite photos styling */
+#favorite-photos ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow the images to wrap into new rows */
+    justify-content: space-between; /* Evenly space the images */
+    padding: 0;
+}
+
+#favorite-photos li {
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px); /* Each image takes up one-third of the row, minus margin space */
+    box-sizing: border-box; /* Include the margin space in the calculation */
+}
+
+#favorite-photos img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto;
+    border-radius: 8px;
+}
+
+  
+  /* Biography styling */
+  #biography img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+  }
+  
+  #biography p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* Contact form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 40px;
+  }
